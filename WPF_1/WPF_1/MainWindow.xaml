@@ -1,0 +1,68 @@
+﻿<Window x:Class="WPF_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_1"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="450" Width="400"
+        Background="DarkGray">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="24"></Setter>
+        </Style>
+        <Style x:Key="Buttons2">
+            <Setter Property="Button.Background" Value="SlateGray"></Setter>
+            <Setter Property="Button.Margin" Value="2"></Setter>
+            <Setter Property="Button.FontSize" Value="24"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Right"></Setter>
+            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <!-- small display -->
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" FontSize="20" Name="Display_up"></TextBlock>
+        <!-- big display -->
+        <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" FontSize="36" Name="Display_down"></TextBlock>
+        <!-- digits -->
+        <Button Grid.Column="1" Grid.Row="6" Content="0" Name="Btn0" Click="Click"/>
+        <Button Grid.Column="0" Grid.Row="5" Content="1" Name="Btn1" Click="Click"/>
+        <Button Grid.Column="1" Grid.Row="5" Content="2" Name="Btn2" Click="Click"/>
+        <Button Grid.Column="2" Grid.Row="5" Content="3" Name="Btn3" Click="Click"/>
+        <Button Grid.Column="0" Grid.Row="4" Content="4" Name="Btn4" Click="Click"/>
+        <Button Grid.Column="1" Grid.Row="4" Content="5" Name="Btn5" Click="Click"/>
+        <Button Grid.Column="2" Grid.Row="4" Content="6" Name="Btn6" Click="Click"/>
+        <Button Grid.Column="0" Grid.Row="3" Content="7" Name="Btn7" Click="Click"/>
+        <Button Grid.Column="1" Grid.Row="3" Content="8" Name="Btn8" Click="Click"/>
+        <Button Grid.Column="2" Grid.Row="3" Content="9" Name="Btn9" Click="Click"/>
+        <!-- operations with memory-->
+        <Button Grid.Column="0" Grid.Row="2" Style="{StaticResource Buttons2}" Content="CE" Name="ClearLast" Height="61" Margin="2,2,2,0" VerticalAlignment="Top" Click="Click"/>
+        <Button Grid.Column="1" Grid.Row="2" Style="{StaticResource Buttons2}" Content="C" Name="Clear" Click="Click"/>
+        <Button Grid.Column="2" Grid.Row="2" Style="{StaticResource Buttons2}" Content="&lt;" Name="RemoveDigit" Click="Click"/>
+        <!-- operations -->
+        <Button Grid.Column="3" Grid.Row="2" Style="{StaticResource Buttons2}" Content="/" Name="Division" Click="Click"/>
+        <Button Grid.Column="3" Grid.Row="3" Style="{StaticResource Buttons2}" Content="*" Name="Multiplication" Click="Click"/>
+        <Button Grid.Column="3" Grid.Row="4" Style="{StaticResource Buttons2}" Content="-" Name="Subtraction" Click="Click"/>
+        <Button Grid.Column="3" Grid.Row="5" Style="{StaticResource Buttons2}" Content="+" Name="Addition" Click="Click"/>
+        <Button Grid.Column="0" Grid.Row="6" Style="{StaticResource Buttons2}" Content="," Name="BtnDot" Margin="2" Click="Click"/>
+        <Button Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Style="{StaticResource Buttons2}" Content="=" Name="Equals" Click="Click"/>
+    </Grid>
+</Window>

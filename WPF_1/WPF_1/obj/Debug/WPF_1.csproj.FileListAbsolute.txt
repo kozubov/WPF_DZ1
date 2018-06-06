@@ -1,0 +1,15 @@
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1.csprojResolveAssemblyReference.cache
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\MainWindow.g.cs
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\App.g.cs
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1_MarkupCompile.cache
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1_MarkupCompile.lref
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1.exe
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1.pdb
+D:\999\WPF\WPF_1\WPF_1\WPF_1\bin\Debug\WPF_1.exe.config
+D:\999\WPF\WPF_1\WPF_1\WPF_1\bin\Debug\WPF_1.exe
+D:\999\WPF\WPF_1\WPF_1\WPF_1\bin\Debug\WPF_1.pdb
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\MainWindow.baml
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1.g.resources
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1.Properties.Resources.resources
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1.csproj.GenerateResource.cache
+D:\999\WPF\WPF_1\WPF_1\WPF_1\obj\Debug\WPF_1.csproj.CoreCompileInputs.cache
